@@ -26,11 +26,14 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+    //Change to false to see the browser
+    //headless: false,
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
   },
 
   /* Configure projects for major browsers */
